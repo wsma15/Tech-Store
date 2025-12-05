@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore | Electronics for Modern Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="logo">TechStore</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+    <div class="header-actions">
+      <label class="selector-label">Currency
+        <select id="currency-select">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </label>
+      <a class="cta" href="products.html">Shop Products</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Flagship-grade electronics</p>
+        <h1>Luxury tech, curated for people who expect the best.</h1>
+        <p class="lead">Signature laptops, tablets, and studio gear with honest specs, balanced performance, and concierge-level support.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="products.html">Browse Products</a>
+          <a class="btn ghost" href="#featured">See featured picks</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-value">48h</span>
+            <span class="meta-label">Express delivery</span>
+          </div>
+          <div>
+            <span class="meta-value">4.9</span>
+            <span class="meta-label">Customer rating</span>
+          </div>
+          <div>
+            <span class="meta-value">24/7</span>
+            <span class="meta-label">Expert support</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card">
+          <p class="label">New drop</p>
+          <h3>UltraBook X1</h3>
+          <p class="muted">Featherweight frame with a 3K display and all-day battery.</p>
+          <div class="chip-row">
+            <span class="chip">Intel Evo</span>
+            <span class="chip">3K OLED</span>
+            <span class="chip">18 hr</span>
+          </div>
+          <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80" alt="Laptop on a desk" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Featured</p>
+          <h2>Flagship picks ready to ship</h2>
+          <p class="muted">Handpicked machines and tablets with balanced performance, displays, and battery life.</p>
+        </div>
+        <a class="text-link" href="products.html">View all products ></a>
+      </div>
+      <div class="products-grid featured-grid" id="featured-grid"></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">Why TechStore</p>
+        <h2>Clarity-first shopping</h2>
+        <p class="lead">We publish full specs, real-world battery estimates, and honest advice. No gimmicks, just gear you can trust.</p>
+        <div class="pill-list">
+          <span class="pill">Certified warranties</span>
+          <span class="pill">Easy returns</span>
+          <span class="pill">Zero bloatware</span>
+          <span class="pill">Price-match</span>
+        </div>
+      </div>
+      <div class="card-list">
+        <article class="info-card">
+          <h3>Setup included</h3>
+          <p class="muted">We pre-configure security updates and remove the clutter so your device feels fast from day one.</p>
+        </article>
+        <article class="info-card">
+          <h3>Spec-driven picks</h3>
+          <p class="muted">Compare RAM, storage, CPU, and screen tech at a glance to find your perfect balance.</p>
+        </article>
+        <article class="info-card">
+          <h3>Friendly support</h3>
+          <p class="muted">Chat or call us anytime. We help with upgrades, accessories, and honest recommendations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section brand-standard" id="standard">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Our Standard</p>
+          <h2>Trust the build, trust the aftercare</h2>
+          <p class="muted">Clear warranty, easy returns, and pro prep before delivery.</p>
+        </div>
+      </div>
+      <div class="card-list">
+        <article class="info-card">
+          <h3>Warranty & returns</h3>
+          <p class="muted">12-24 month manufacturer warranty with a 14-day no-questions return window. Transparent from day one.</p>
+        </article>
+        <article class="info-card">
+          <h3>Performance prep</h3>
+          <p class="muted">We apply updates, remove bloatware, and install optimal drivers so you get steady performance from the first boot.</p>
+        </article>
+        <article class="info-card">
+          <h3>Concierge support</h3>
+          <p class="muted">Dedicated support channel, accessory recommendations, and upgrade consults pre- and post-purchase.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section trust-badges" id="trust">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Confidence built-in</p>
+          <h2>Policies that protect your purchase</h2>
+          <p class="muted">Warranty clarity, upgrade-friendly advice, and transparent replacements.</p>
+        </div>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <span class="badge">Warranty</span>
+          <h3>Device swap support</h3>
+          <p class="muted">If a unit fails early, we coordinate diagnosis, swap, and data-safe handling.</p>
+        </div>
+        <div class="trust-card">
+          <span class="badge">Returns</span>
+          <h3>14-day no-questions</h3>
+          <p class="muted">Decide with peace of mind. We keep return steps short and human.</p>
+        </div>
+        <div class="trust-card">
+          <span class="badge">Care</span>
+          <h3>Health checks</h3>
+          <p class="muted">Thermal and battery health checks before shipping so you start strong.</p>
+        </div>
+      </div>
+      <div class="testimonial-row">
+        <article class="testimonial-card">
+          <p>“They helped me pick a creator laptop, tuned it, and shipped overnight. First boot was spotless.”</p>
+          <span class="muted">— Lina, motion designer</span>
+        </article>
+        <article class="testimonial-card">
+          <p>“Transparent specs, zero bloatware, and support that actually answers fast.”</p>
+          <span class="muted">— Omar, developer</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section guides" id="guides">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Buying guides</p>
+          <h2>Pick the right machine for your work</h2>
+          <p class="muted">Short, no-fluff guidance with curated picks.</p>
+        </div>
+        <a class="text-link" href="products.html">See all devices ></a>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card">
+          <h3>Students & everyday</h3>
+          <p class="muted">Focus on battery, weight, and a bright screen. 8–16GB RAM is plenty.</p>
+          <a class="text-link" href="products.html">View recommended sets</a>
+        </article>
+        <article class="guide-card">
+          <h3>Creators & editors</h3>
+          <p class="muted">Aim for calibrated displays, 32GB RAM, and mid-GPU power for smooth timelines.</p>
+          <a class="text-link" href="products.html">See creator picks</a>
+        </article>
+        <article class="guide-card">
+          <h3>Developers</h3>
+          <p class="muted">Prioritize CPU efficiency, RAM headroom, and quiet thermals for long compile runs.</p>
+          <a class="text-link" href="products.html">Browse dev machines</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section cta-banner">
+      <div>
+        <p class="eyebrow">Need advice?</p>
+        <h2>Tell us how you work - we'll match a device.</h2>
+        <p class="muted">Students, creators, developers, or everyday multitaskers: we help you pick the right hardware.</p>
+      </div>
+      <a class="btn primary" href="products.html">Start browsing</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="logo">TechStore</div>
+    <p class="muted">Modern electronics with transparent specs and expert guidance.</p>
+    <div class="footer-links">
+      <a href="products.html">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Support</a>
+    </div>
+    <p class="muted small">© 2024 TechStore. Crafted with care.</p>
+  </footer>
+
+  <script src="scripts/products.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+
+

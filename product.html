@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | TechStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="product">
+  <header class="site-header">
+    <div class="logo">TechStore</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+    <div class="header-actions">
+      <label class="selector-label">Currency
+        <select id="currency-select">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </label>
+      <button class="cart-pill" id="cart-badge" aria-label="Cart summary">Cart (0) • $0</button>
+      <a class="cta" href="products.html">Back to Products</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div id="product-detail" class="product-detail"></div>
+    <section class="section related">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">You may also like</p>
+          <h2>Similar picks</h2>
+          <p class="muted">Stay in the same power class with these options.</p>
+        </div>
+        <a class="text-link" href="products.html">View all →</a>
+      </div>
+      <div class="products-grid compact" id="related-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="logo">TechStore</div>
+    <p class="muted small">© 2024 TechStore.</p>
+  </footer>
+
+  <script src="scripts/products.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | TechStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="products">
+  <header class="site-header">
+    <div class="logo">TechStore</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link active">Products</a>
+    </nav>
+    <div class="header-actions">
+      <label class="selector-label">Currency
+        <select id="currency-select">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </label>
+      <button class="cart-pill" id="cart-badge" aria-label="Cart summary">Cart (0) • $0</button>
+      <a class="cta" href="index.html">Back Home</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow">Catalog</p>
+        <h1>Find your next device</h1>
+        <p class="muted">Compare displays, battery life, and performance without the marketing fluff.</p>
+      </div>
+      <div class="filters">
+        <input type="search" id="search" placeholder="Search by name or spec..." aria-label="Search products">
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="">All categories</option>
+          <option value="laptop">Laptops</option>
+          <option value="tablet">Tablets</option>
+          <option value="desktop">Desktops</option>
+        </select>
+        <select id="cpu-filter" aria-label="Filter by CPU">
+          <option value="">All CPUs</option>
+          <option value="Intel i5">Intel i5</option>
+          <option value="Intel i7">Intel i7</option>
+          <option value="Ryzen 7">Ryzen 7</option>
+          <option value="Ryzen 9">Ryzen 9</option>
+          <option value="Snapdragon">Snapdragon</option>
+        </select>
+        <label class="range-label">Max price: <span id="price-label">$2500</span>
+          <input type="range" id="price-filter" min="500" max="2500" step="50" value="2500" aria-label="Max price">
+        </label>
+        <label class="range-label">Min RAM: <span id="ram-label">0 GB</span>
+          <input type="range" id="ram-filter" min="0" max="64" step="4" value="0" aria-label="Minimum RAM">
+        </label>
+        <button class="btn ghost" id="reset-filters" type="button">Reset</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="products-grid"></div>
+
+    <section class="compare-panel" id="compare-panel">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Compare</p>
+          <h2>Side-by-side specs</h2>
+          <p class="muted">Pick up to 3 devices to compare.</p>
+        </div>
+        <button class="btn ghost" id="clear-compare" type="button">Clear</button>
+      </div>
+      <div id="compare-grid" class="compare-grid muted">Select products to compare.</div>
+    </section>
+
+    <section class="cart-panel" id="cart-panel">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Cart</p>
+          <h3>Quick summary</h3>
+        </div>
+        <button class="btn ghost" id="clear-cart" type="button">Clear</button>
+      </div>
+      <div id="cart-items" class="cart-items muted">Cart is empty.</div>
+      <div class="cart-summary">
+        <span>Items</span>
+        <strong id="cart-count">0</strong>
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <button class="btn primary" id="go-checkout" type="button">Proceed to checkout</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="logo">TechStore</div>
+    <p class="muted small">© 2024 TechStore.</p>
+  </footer>
+
+  <script src="scripts/products.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

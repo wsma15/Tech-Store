@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | TechStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <div class="logo">TechStore</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+    </nav>
+    <div class="header-actions">
+      <label class="selector-label">Currency
+        <select id="currency-select">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </label>
+      <button class="cart-pill" id="cart-badge" aria-label="Cart summary">Cart (0) • $0</button>
+      <a class="cta" href="products.html">Back to Products</a>
+    </div>
+  </header>
+
+  <main class="section checkout">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow">Checkout</p>
+        <h1>Review your order</h1>
+        <p class="muted">Shipping, tax, and any coupon adjustments update instantly.</p>
+      </div>
+    </div>
+
+    <div class="checkout-grid">
+      <section class="checkout-panel">
+        <h3>Items</h3>
+        <div id="checkout-items" class="cart-items muted">Cart is empty.</div>
+      </section>
+
+      <section class="checkout-panel">
+        <h3>Shipping & tax</h3>
+        <div class="shipping-options">
+          <label><input type="radio" name="shipping" value="standard" checked> Standard (est. 25)</label>
+          <label><input type="radio" name="shipping" value="express"> Express (est. 45)</label>
+          <label><input type="radio" name="shipping" value="pickup"> Store pickup (free)</label>
+        </div>
+        <div class="coupon-row">
+          <input type="text" id="coupon-input" placeholder="Coupon: SAVE50, SHIPFREE, WELCOME10">
+          <button class="btn ghost" id="apply-coupon" type="button">Apply</button>
+        </div>
+        <div class="totals">
+          <div><span class="muted">Items</span><strong id="checkout-items-total">$0</strong></div>
+          <div><span class="muted">Shipping</span><strong id="checkout-shipping">$0</strong></div>
+          <div><span class="muted">Discount</span><strong id="checkout-discount">$0</strong></div>
+          <div><span class="muted">Tax</span><strong id="checkout-tax">$0</strong></div>
+          <div class="total-row"><span>Total</span><strong id="checkout-grand">$0</strong></div>
+        </div>
+        <button class="btn primary full" id="place-order" type="button">Place order</button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="logo">TechStore</div>
+    <p class="muted small">(c) 2024 TechStore.</p>
+  </footer>
+
+  <script src="scripts/products.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
